@@ -7,8 +7,10 @@ const CrypticdevPage: NextPage = () => {
       <div className="px-5 w-full max-w-5xl">
         <h1 className="text-center text-base-content mb-2">
           <span className="block text-2xl mb-2">Welcome to</span>
-          <span className="block text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            crypticdev&apos;s Page
+          <span className="block text-4xl font-bold">
+            <span className="bg-gradient-to-r from-accent via-info to-success bg-clip-text text-transparent">
+              crypticdev&apos;s Page
+            </span>
           </span>
         </h1>
         <p className="text-center text-base-content opacity-80 mb-8">Batch 22 Builder | Ethereum Enthusiast</p>
