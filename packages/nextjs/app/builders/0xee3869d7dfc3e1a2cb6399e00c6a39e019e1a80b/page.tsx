@@ -4,10 +4,12 @@ import { Globe, Linkedin } from "lucide-react";
 import type { NextPage } from "next";
 import { BlockieAvatar } from "~~/components/scaffold-eth";
 
+const builderAddress = "0xEe3869d7dFc3e1a2CB6399E00C6a39E019E1A80b";
+const linkedinUrl = "https://www.linkedin.com/in/oscar-yu-cheuk-chun/";
+const websiteUrl = "https://oscar-yu-portfolio.vercel.app/";
+const skills = ["Solidity", "TypeScript", "React", "Python"];
+
 const OscarYuBuilderPage: NextPage = () => {
-  const builderAddress = "0xEe3869d7dFc3e1a2CB6399E00C6a39E019E1A80b";
-  const linkedinUrl = "https://www.linkedin.com/in/oscar-yu-cheuk-chun/";
-  const websiteUrl = "https://oscar-yu-portfolio.vercel.app/";
   return (
     <>
       <div className="min-h-screen flex flex-col items-center mt-10 px-5">
@@ -43,10 +45,11 @@ const OscarYuBuilderPage: NextPage = () => {
               <h2 className="text-3xl font-bold">Skills</h2>
             </div>
             <div className="flex flex-wrap gap-3 mb-6">
-              <span className="px-4 py-2 bg-primary rounded-full font-medium">Solidity</span>
-              <span className="px-4 py-2 bg-primary rounded-full font-medium">TypeScript</span>
-              <span className="px-4 py-2 bg-primary rounded-full font-medium">React</span>
-              <span className="px-4 py-2 bg-primary rounded-full font-medium">Python</span>
+              {skills.map(skill => (
+                <span key={skill} className="px-4 py-2 bg-primary rounded-full font-medium">
+                  {skill}
+                </span>
+              ))}
             </div>
 
             {/* About Me Section */}
