@@ -24,7 +24,6 @@ const NicksProfile: NextPage = () => {
           <div className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
             <p>⚡ Prefinal-year engineering student diving deep into Ethereum development.</p>
             <p>
-              {" "}
               Leveling up through Cyfrin Updraft, Alchemy University, and Encode Club — learning advanced Solidity,
               testing, & security.
             </p>
